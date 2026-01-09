@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Application
 
-## Getting Started
+A production-ready Next.js web application built for scalability, performance, and modern web development workflows.
 
-First, run the development server:
+---
+
+# GitHub Badges
+
+![GitHub last commit](https://img.shields.io/github/last-commit/USERNAME/REPOSITORY)
+![GitHub repo size](https://img.shields.io/github/repo-size/USERNAME/REPOSITORY)
+![GitHub issues](https://img.shields.io/github/issues/USERNAME/REPOSITORY)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/USERNAME/REPOSITORY)
+![GitHub license](https://img.shields.io/github/license/USERNAME/REPOSITORY)
+
+*Replace `USERNAME` and `REPOSITORY` with your GitHub account and repository name.*
+
+---
+
+# Project Overview
+
+This project is built with **Next.js**, a React-based framework that enables server-side rendering, static generation, API routes, and modern frontend tooling.  
+The structure is optimized for clean code, scalability, and deployment on platforms such as Vercel, Netlify, and cloud servers.
+
+---
+
+# System Requirements
+
+Make sure the following are installed:
+
+* Node.js version 18 or later  
+* npm or yarn  
+* Git  
+
+Verify by running:
+
+```bash
+node -v
+npm -v
+git --version
+```
+
+---
+
+# Installation
+
+## Step 1: Clone the Repository
+
+```bash
+git clone git@github.com:YasinArafatAjad/app-ui-admin.git
+cd app-ui-admin
+
+```
+
+---
+
+## Step 2: Install Dependencies
+
+Using npm:
+
+```bash
+npm install
+```
+
+Using yarn:
+
+```bash
+yarn install
+```
+
+---
+
+# Environment Variables
+
+Only variables prefixed with `NEXT_PUBLIC_` are accessible in the browser.
+
+---
+
+# Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application will be available at:
 
-## Learn More
+```
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Build for Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+or
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# Run Production Server
+
+After building:
+
+```bash
+npm run start
+```
+
+or
+
+```bash
+yarn start
+```
+
+---
+
+# Project Structure
+
+```text
+/
+├── src/app/            Application routes
+├── components/         Reusable UI components
+├── public/             Static assets
+├── .env.local          Environment variables
+├── package.json
+└── README.md
+```
+
+
+# License
+
+This project is licensed under the **MIT License**.
