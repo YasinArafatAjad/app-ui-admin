@@ -30,12 +30,12 @@ const Sidebar = () => {
   return (
     <aside className="hidden md:flex flex-col w-64 bg-card border-r border-border h-screen sticky top-0">
       {/* Logo */}
-      <div className="flex items-center gap-3 px-6 h-16 border-b border-border">
+      <Link href={'/'} className="flex items-center gap-3 px-6 h-16 border-b border-border">
         <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
           <Store className="w-5 h-5 text-primary-foreground" />
         </div>
-        <span className="font-semibold text-lg">ShopAdmin</span>
-      </div>
+        <span className="font-semibold text-lg ">ShopAdmin</span>
+      </Link>
 
       {/* Navigation */}
       <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto no-scrollbar">
