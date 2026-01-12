@@ -20,41 +20,41 @@ const SalesBarChart = () => {
           <p className="text-xs text-muted-foreground">Last 7 days performance</p>
         </div>
         <div className="text-right">
-          <p className="font-bold text-lg md:text-xl">$32,200</p>
+          <p className="font-bold text-lg md:text-xl">৳32,200</p>
           <p className="text-xs text-success">+12.5% vs last week</p>
         </div>
       </div>
       <div className="h-48 md:h-64">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={salesData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--border))" />
+            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border)" />
             <XAxis 
               dataKey="name" 
               axisLine={false} 
               tickLine={false}
-              tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 12 }}
+              tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
             />
             <YAxis 
               axisLine={false} 
               tickLine={false}
-              tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 12 }}
-              tickFormatter={(value) => `$${value / 1000}k`}
+              tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
+              tickFormatter={(value) => `৳${value / 1000}k`}
             />
             <Tooltip 
               contentStyle={{
-                backgroundColor: 'hsl(var(--card))',
-                border: '1px solid hsl(var(--border))',
+                backgroundColor: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: '0.75rem',
                 boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
               }}
-              labelStyle={{ color: 'hsl(var(--foreground))', fontWeight: 600 }}
-              formatter={(value) => [`$${value.toLocaleString()}`, 'Sales']}
+              labelStyle={{ color: 'var(--foreground)', fontWeight: 600 }}
+              formatter={(value) => [`৳${value.toLocaleString()}`, 'Sales']}
             />
             <Bar dataKey="sales" radius={[6, 6, 0, 0]}>
               {salesData.map((entry, index) => (
                 <Cell 
                   key={`cell-${index}`} 
-                  fill={index === salesData.length - 2 ? 'hsl(var(--primary))' : 'hsl(var(--primary) / 0.5)'} 
+                  fill={index === salesData.length - 2 ? 'var(--primary)' : 'var(--primary-half)'} 
                 />
               ))}
             </Bar>
