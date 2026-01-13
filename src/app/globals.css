@@ -1,5 +1,7 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
+@custom-variant dark (&:is(.dark *));
 
 @theme {
     /* Backgrounds */
@@ -59,57 +61,6 @@
 }
 
 
-  .dark {
-    /* Backgrounds */
-    --color-background: #0b1b06;        /* very dark green */
-    --color-foreground: #f3f8f9;        /* very light cyan/white */
-
-    --color-card: #1a1c09;              /* very dark greenish */
-    --color-card-foreground: #f3f8f9;   /* very light cyan/white */
-
-    --color-popover: #1a1c09;           /* very dark greenish */
-    --color-popover-foreground: #f3f8f9; /* very light cyan/white */
-
-    /* Primary / Secondary */
-    --color-primary: #4c7fff;           /* blue */
-    --color-primary-foreground: #ffffff; /* white */
-
-    --color-secondary: #2f4a2c;         /* dark muted green */
-    --color-secondary-foreground: #f3f8f9; /* very light cyan/white */
-
-    --color-muted: #2f4a2c;             /* dark muted green */
-    --color-muted-foreground: #361a42;  /* dark purple/blue */
-
-    --color-accent: #29a66f;            /* green */
-    --color-accent-foreground: #ffffff; /* white */
-
-    --color-destructive: #4d0f14;       /* dark red */
-    --color-destructive-foreground: #f3f8f9; /* very light cyan/white */
-
-    --color-success: #29a66f;           /* green */
-    --color-success-foreground: #ffffff; /* white */
-
-    --color-warning: #ffcc19;           /* yellow */
-    --color-warning-foreground: #ffffff; /* white */
-
-    /* Borders / Inputs / Rings */
-    --color-border: #2f4a2c;            /* dark muted green */
-    --color-input: #2f4a2c;             /* dark muted green */
-    --color-ring: #4c7fff;              /* blue */
-
-    /* Sidebar */
-    --color-sidebar-background: #1a1c09;           /* very dark greenish */
-    --color-sidebar-foreground: #f3f8f9;           /* very light cyan/white */
-    --color-sidebar-primary: #4c7fff;              /* blue */
-    --color-sidebar-primary-foreground: #ffffff;   /* white */
-    --color-sidebar-accent: #2f4a2c;               /* dark muted green */
-    --color-sidebar-accent-foreground: #f3f8f9;    /* very light cyan/white */
-    --color-sidebar-border: #2f4a2c;               /* dark muted green */
-    --color-sidebar-ring: #4c7fff;                 /* blue */
-}
-
-
-
  body {
     @apply font-sans antialiased;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -121,5 +72,3 @@
   html {
     scroll-behavior: smooth;
   }
-
-
