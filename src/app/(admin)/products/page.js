@@ -33,7 +33,7 @@ import { Button } from '@/components/ui/button';
 import ProductCard from '@/components/ui/ProductCard';
 
 const initialProducts = [
-  { id: 1, name: 'Wireless Earbuds Pro', category: 'Electronics', price: 49.99, stock: 245, image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop' },
+  { id: 1, name: 'Wireless Earbuds Pro', category: 'Electronics', price: 69.99, stock: 245, image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop' },
   { id: 2, name: 'Smart Watch Series 5', category: 'Electronics', price: 199.99, stock: 89, image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&h=400&fit=crop' },
   { id: 3, name: 'Laptop Stand Aluminum', category: 'Accessories', price: 29.99, stock: 156, image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop' },
   { id: 4, name: 'Mechanical Keyboard', category: 'Electronics', price: 89.99, stock: 4, image: 'https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=400&h=400&fit=crop' },
